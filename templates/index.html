@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body
+    {
+      /* background-image: url({{url_for('static',filename= 'images/Boston_House1.png')}}) */
+      background-color: rgba(115, 191, 101, 0.556); 
+    }
+  </style>
+</head>
+<body>
+
+<h2>PREDICT PRICE</h2>
+<h5>THIS PAGE WILL PREDICT THE PRICE OF BOSTON_HOUSE DATASET BASED ON THE INPUT DATA FOR FOLLOWING VARIABLES</h5>
+<h5>PLEASE ENTER THE VALUES:</h5>
+
+<form action="/submit" method='post'>
+  
+  <label for="CRIM" style="font-size: 17px"><b>CRIM</b></label><br>
+  <input type="number" step="0.00001" class="form-control" id="CRIM" name="CRIM"
+  placeholder="Enter the value" style="font-weight: bold"required/><br><br>
+
+  <label for="ZN" style="font-size: 17px"><b>ZN</b></label><br>
+  <input type="number" step="0.1" class="form-control" id="ZN" name="ZN"
+  placeholder="Enter the value" style="font-weight: bold"required/><br><br>
+
+  <label for="INDUS" style="font-size: 17px"><b>INDUS</b></label><br>
+  <input type="number" step="0.01" class="form-control" id="INDUS" name="INDUS"
+  placeholder="Enter the value" style="font-weight: bold"required/><br><br>
+
+  <label for="CHAS" style="font-size: 17px"><b>CHAS</b></label><br>
+  <input type="number" step="0.1" class="form-control" id="CHAS" name="CHAS"
+  placeholder="Enter the value" style="font-weight: bold"required/><br><br>
+
+  <label for="NOX" style="font-size: 17px"><b>NOX</b></label><br>
+  <input type="number" step="0.001" class="form-control" id="NOX" name="NOX"
+  placeholder="Enter the value" style="font-weight: bold"required/><br><br>
+
+  <label for="RM" style="font-size: 17px"><b>RM</b></label><br>
+  <input type="number" step="0.001" class="form-control" id="RM" name="RM"
+  placeholder="Enter the value" style="font-weight: bold"required/><br><br>
+
+  <label for="AGE" style="font-size: 17px"><b>AGE</b></label><br>
+  <input type="number" step="0.1" class="form-control" id="AGE" name="AGE"
+  placeholder="Enter the value" style="font-weight: bold"required/><br><br>
+
+  <label for="DIS" style="font-size: 17px"><b>DIS</b></label><br>
+  <input type="number" step="0.0001" class="form-control" id="DIS" name="DIS"
+  placeholder="Enter the value" style="font-weight: bold"required/><br><br>
+
+  <label for="RAD" style="font-size: 17px"><b>RAD</b></label><br>
+  <input type="number" step="0.1" class="form-control" id="RAD" name="RAD"
+  placeholder="Enter the value" style="font-weight: bold"required/><br><br>
+
+  <label for="TAX" style="font-size: 17px"><b>TAX</b></label><br>
+  <input type="number" step="0.1" class="form-control" id="TAX" name="TAX"
+  placeholder="Enter the value" style="font-weight: bold"required/><br><br>
+
+  <label for="PTRATIO" style="font-size: 17px"><b>PTRATIO</b></label><br>
+  <input type="number" step="0.1" class="form-control" id="PTRATIO" name="PTRATIO"
+  placeholder="Enter the value" style="font-weight: bold"required/><br><br>
+
+  <label for="B" style="font-size: 17px"><b>B</b></label><br>
+  <input type="number" step="0.01" class="form-control" id="B" name="B"
+  placeholder="Enter the value" style="font-weight: bold"required/><br><br>
+
+  <label for="LSTAT" style="font-size: 17px"><b>LSTAT</b></label><br>
+  <input type="number" step="0.01" class="form-control" id="LSTAT" name="LSTAT"
+  placeholder="Enter the value" style="font-weight: bold"required/><br><br>
+
+  <!-- <label for="Dummy" style="font-size: 17px "><b>Dummy</b></label>
+  <select
+    onchange="print_city('state', this.selectedIndex);"
+    id="sts"
+    name="stt"
+    class="form-control"
+    style="font-weight: bold; color: black;"
+  
+    required
+  ></select>
+  <br />
+  <label for="Dummy" style="font-size: 17px"><b>Dummy</b></label>
+  <select
+    id="state"
+    class="form-control"
+    name="city"
+    style="font-weight: bold; color: black;"
+    required
+  ></select>
+  <script language="javascript">
+    print_state("sts");
+  </script> -->
+  
+  <!-- ABOVE COMMENTED IS FOR FURTHER REFERENCE ONLY -->
+
+  <input type="submit" value="SUBMIT_AND_PREDICT_PRICE">
+</form> 
+
+<p>Click the "PREDICT_PRICE" button, the form-data will be sent to a page with url "/submit".</p>
+
+</body>
+</html>
+
+<!--  <!DOCTYPE html> All HTML documents must start with a <!DOCTYPE> declaration. -->
+<!-- <body></body> <body> element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.-->
+
+<!--  <br>  Line Break  -->
+<!-- <h2></h2> It defines the second-level headings on your webpage-->
+<!-- <p></p> <p> element defines a paragraph. A paragraph always starts on a new line-->
